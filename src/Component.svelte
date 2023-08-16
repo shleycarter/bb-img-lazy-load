@@ -10,4 +10,4 @@
   const component = getContext("component")
 </script>
 
-<img use:styleable={$component.styles} data-src={imgSrc} alt={imgAltText} style="--size:{size}" />
+<img data-src={imgSrc} alt={imgAltText} use:lazyImage style="--size:{size}"/>
