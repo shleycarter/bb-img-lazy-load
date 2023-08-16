@@ -8,9 +8,21 @@
     "icon": "Image",
     "settings": [
       {
-        "type": "image",
-        "key": "image source",
-        "label": "image source"
+        "type": "text",
+        "key": "imgSrc",
+        "label": "Image URL"
+      },
+      {
+        "type": "select",
+        "options": ["112px", "120px", "130px", "140px", "150px", "160px"],
+        "key": "size",
+        "label": "Thumbnail Size",
+        "defaultValue": "120px"
+      },
+      {
+        "type": "text",
+        "key": "imgAltText",
+        "label": "Alt Text"
       }
     ]
   }

@@ -4,9 +4,10 @@
 
   export let imgSrc
   export let imgAltText = "Assessment Capture"
+  export let size
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
 </script>
 
-<img use:styleable={$component.styles} data-src={imgSrc} alt={imgAltText} use:lazyImage />
+<img use:styleable={$component.styles} data-src={imgSrc} alt={imgAltText} style="--size:{size}" />
