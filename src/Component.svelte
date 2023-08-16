@@ -10,4 +10,5 @@
   const component = getContext("component")
 </script>
 
-<img data-src={imgSrc} alt={imgAltText} use:lazyImage style="--size:{size}"/>
+
+  <img data-src={imgSrc} alt={imgAltText} use:lazyImage style="width:{size}; height:{size}; object-fit: cover; border-radius: 10%"/>
