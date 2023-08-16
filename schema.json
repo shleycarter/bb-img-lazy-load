@@ -5,12 +5,12 @@
     "name": "bb-img-lazy-load",
     "friendlyName": "bb-img-lazy-load",
     "description": "An amazing Budibase component!",
-    "icon": "Text",
+    "icon": "Image",
     "settings": [
       {
-        "type": "text",
-        "key": "text",
-        "label": "Text"
+        "type": "image",
+        "key": "image source",
+        "label": "image source"
       }
     ]
   }

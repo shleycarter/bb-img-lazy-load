@@ -1,12 +1,12 @@
 <script>
   import { getContext } from "svelte"
+  import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 
-  export let text
+  export let imgSrc
+  export let imgAltText = "Assessment Capture"
 
   const { styleable } = getContext("sdk")
   const component = getContext("component")
 </script>
 
-<div use:styleable={$component.styles}>
-  This is a custom component. The text setting is: {text}.
-</div>
+<img use:styleable={$component.styles} data-src={imgSrc} alt={imgAltText} use:lazyImage />
